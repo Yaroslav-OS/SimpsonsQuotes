@@ -1,24 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zjO-aQ-R5U">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="25h-ef-5aq">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController id="zjO-aQ-R5U" customClass="ViewController" customModule="SimpsonsQuotes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5d7-2O-Q8m">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SimpsonsCloud" translatesAutoresizingMaskIntoConstraints="NO" id="bJ6-3u-Mee" userLabel="BackgroundImage">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="The Simpsons" translatesAutoresizingMaskIntoConstraints="NO" id="TP7-62-ied">
+                                <rect key="frame" x="67.5" y="35" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="VkS-m7-RiV"/>
+                                    <constraint firstAttribute="width" constant="240" id="eWh-zI-mAw"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qn3-xy-3Lw">
+                                <rect key="frame" x="112.5" y="587" width="150" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="62C-Cs-sba"/>
+                                    <constraint firstAttribute="height" constant="50" id="Syf-y3-WC2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="20"/>
+                                <state key="normal" title="NEW QUOTE">
+                                    <color key="titleColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                </state>
+                                <connections>
+                                    <action selector="newQuoteTapped" destination="zjO-aQ-R5U" eventType="touchUpInside" id="pAj-4l-2RP"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="s3R-Tt-7xY">
+                                <rect key="frame" x="20" y="193" width="335" height="68"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quote" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UXA-yX-Kjb">
+                                        <rect key="frame" x="137.5" y="0.0" width="60.5" height="25.5"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U8U-b7-1KM">
+                                        <rect key="frame" x="20" y="45.5" width="295" height="22.5"/>
+                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="20"/>
+                                        <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="U8U-b7-1KM" secondAttribute="trailing" constant="20" id="Vqu-YL-KbV"/>
+                                </constraints>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qy7-0n-rgl">
+                                <rect key="frame" x="20" y="311" width="335" height="246"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Qn3-xy-3Lw" firstAttribute="top" secondItem="qy7-0n-rgl" secondAttribute="bottom" constant="30" id="9Uw-We-noj"/>
+                            <constraint firstItem="TP7-62-ied" firstAttribute="centerX" secondItem="5d7-2O-Q8m" secondAttribute="centerX" id="Bb5-I6-UEU"/>
+                            <constraint firstItem="bJ6-3u-Mee" firstAttribute="leading" secondItem="5d7-2O-Q8m" secondAttribute="leading" id="Ils-sC-5B1"/>
+                            <constraint firstItem="Ko3-q6-gsj" firstAttribute="bottom" secondItem="Qn3-xy-3Lw" secondAttribute="bottom" constant="30" id="Kkw-DR-r9D"/>
+                            <constraint firstItem="Ko3-q6-gsj" firstAttribute="trailing" secondItem="qy7-0n-rgl" secondAttribute="trailing" constant="20" id="Kqr-UN-Adt"/>
+                            <constraint firstItem="qy7-0n-rgl" firstAttribute="leading" secondItem="Ko3-q6-gsj" secondAttribute="leading" constant="20" id="LvQ-gX-Q9L"/>
+                            <constraint firstItem="bJ6-3u-Mee" firstAttribute="top" secondItem="5d7-2O-Q8m" secondAttribute="top" id="Nht-tx-NrA"/>
+                            <constraint firstItem="s3R-Tt-7xY" firstAttribute="leading" secondItem="Ko3-q6-gsj" secondAttribute="leading" constant="20" id="QzZ-Aj-pdx"/>
+                            <constraint firstItem="qy7-0n-rgl" firstAttribute="top" secondItem="s3R-Tt-7xY" secondAttribute="bottom" constant="50" id="R8z-a4-CyM"/>
+                            <constraint firstItem="s3R-Tt-7xY" firstAttribute="centerX" secondItem="5d7-2O-Q8m" secondAttribute="centerX" id="S35-hM-b2J"/>
+                            <constraint firstAttribute="trailing" secondItem="bJ6-3u-Mee" secondAttribute="trailing" id="WJP-yF-NBQ"/>
+                            <constraint firstItem="TP7-62-ied" firstAttribute="top" secondItem="Ko3-q6-gsj" secondAttribute="top" constant="35" id="g8m-SB-c9w"/>
+                            <constraint firstItem="Qn3-xy-3Lw" firstAttribute="centerX" secondItem="5d7-2O-Q8m" secondAttribute="centerX" id="hZt-0h-vk1"/>
+                            <constraint firstItem="Ko3-q6-gsj" firstAttribute="trailing" secondItem="s3R-Tt-7xY" secondAttribute="trailing" constant="20" id="nST-eI-Bm0"/>
+                            <constraint firstItem="s3R-Tt-7xY" firstAttribute="top" secondItem="TP7-62-ied" secondAttribute="bottom" constant="30" id="oa4-mF-Hi2"/>
+                            <constraint firstAttribute="bottom" secondItem="bJ6-3u-Mee" secondAttribute="bottom" id="u5b-eO-xdE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ko3-q6-gsj"/>
                     </view>
+                    <connections>
+                        <outlet property="characterPicture" destination="qy7-0n-rgl" id="enQ-t4-Wq2"/>
+                        <outlet property="nameLabel" destination="U8U-b7-1KM" id="Y2i-f5-hSm"/>
+                        <outlet property="newQuoteButtonAppearance" destination="Qn3-xy-3Lw" id="ZXq-uN-S3L"/>
+                        <outlet property="quoteLabel" destination="UXA-yX-Kjb" id="exN-bt-zu7"/>
+                        <outlet property="stackView" destination="s3R-Tt-7xY" id="TcH-ut-aAd"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qHT-G4-Krt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-4" y="87.706146926536732"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="SimpsonsCloud" width="1663" height="1060"/>
+        <image name="The Simpsons" width="800" height="310"/>
+    </resources>
 </document>
