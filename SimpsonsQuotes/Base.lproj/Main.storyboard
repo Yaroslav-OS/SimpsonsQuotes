@@ -126,7 +126,7 @@
             </objects>
             <point key="canvasLocation" x="1874.4000000000001" y="87.706146926536732"/>
         </scene>
-        <!--Title-->
+        <!--Some Quotes-->
         <scene sceneID="lod-7E-Feu">
             <objects>
                 <tableViewController id="zMY-dc-hEp" customClass="ListOfQuotesTable" customModule="SimpsonsQuotes" customModuleProvider="target" sceneMemberID="viewController">
@@ -170,7 +170,7 @@
                             <outlet property="delegate" destination="zMY-dc-hEp" id="HDY-mD-4Ka"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Title" id="d2J-dX-TrC"/>
+                    <navigationItem key="navigationItem" title="Some Quotes" id="d2J-dX-TrC"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sn6-GO-f6S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
