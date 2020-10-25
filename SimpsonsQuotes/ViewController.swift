@@ -31,8 +31,8 @@ class ViewController: UIViewController {
                 
         stackView.isHidden = true
         
-        NetworkManager.shared.fetchData(urlString: "https://thesimpsonsquoteapi.glitch.me/quotes?count=10") { quotes in
-            self.quotes = quotes
+        NetworkManager.shared.fetchData(urlString: "https://thesimpsonsquoteapi.glitch.me/quotes?count=10") { [weak self ]quotes in
+            self?.quotes = quotes
         }
     }
     
@@ -103,12 +103,9 @@ class ViewController: UIViewController {
         nameLabel.text = " -- \(quotes[numberOfQuote].character)"
         
         
-        self.image = UIImage(data: ImageManager.shared.fetchImage(url: quotes[numberOfQuote].image)!)
+        image = UIImage(data: ImageManager.shared.fetchImage(url: quotes[numberOfQuote].image) ?? Data())
         
-        if let image = image {
-            characterPicture.image = image
-        } else {
-            characterPicture.image = UIImage(named: "?")
-        }
+        characterPicture.image = image ?? UIImage(named: "?")
+
     }
 }
