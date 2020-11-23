@@ -31,7 +31,7 @@ class ViewController: UIViewController {
                 
         stackView.isHidden = true
         
-        NetworkManager.shared.fetchData(urlString: "https://thesimpsonsquoteapi.glitch.me/quotes?count=10") { [weak self ]quotes in
+        NetworkManager.shared.fetchData(urlString: "https://thesimpsonsquoteapi.glitch.me/quotes?count=10") { [weak self] quotes in
             self?.quotes = quotes
         }
     }

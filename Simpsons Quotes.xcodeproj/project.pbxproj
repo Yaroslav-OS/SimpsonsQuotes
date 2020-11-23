@@ -23,7 +23,7 @@
 		C464547D2534AB370002D807 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C4EABFC52537555B006469D0 /* The Simpsons.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The Simpsons.mp3"; sourceTree = "<group>"; };
 		C4EABFC725376569006469D0 /* ListOfQuotesTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfQuotesTable.swift; sourceTree = "<group>"; };
-		C4F2B22E2532E25900605C30 /* SimpsonsQuotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpsonsQuotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4F2B22E2532E25900605C30 /* Simpsons Quotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Simpsons Quotes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4F2B2312532E25900605C30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4F2B2332532E25900605C30 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C4F2B2382532E25900605C30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -48,7 +48,7 @@
 		C4F2B2252532E25900605C30 = {
 			isa = PBXGroup;
 			children = (
-				C4F2B2302532E25900605C30 /* SimpsonsQuotes */,
+				C4F2B2302532E25900605C30 /* Simpsons Quotes */,
 				C4F2B22F2532E25900605C30 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,12 +56,12 @@
 		C4F2B22F2532E25900605C30 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C4F2B22E2532E25900605C30 /* SimpsonsQuotes.app */,
+				C4F2B22E2532E25900605C30 /* Simpsons Quotes.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C4F2B2302532E25900605C30 /* SimpsonsQuotes */ = {
+		C4F2B2302532E25900605C30 /* Simpsons Quotes */ = {
 			isa = PBXGroup;
 			children = (
 				C4EABFC52537555B006469D0 /* The Simpsons.mp3 */,
@@ -76,15 +76,15 @@
 				C464547D2534AB370002D807 /* ViewController.swift */,
 				C4EABFC725376569006469D0 /* ListOfQuotesTable.swift */,
 			);
-			path = SimpsonsQuotes;
+			path = "Simpsons Quotes";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C4F2B22D2532E25900605C30 /* SimpsonsQuotes */ = {
+		C4F2B22D2532E25900605C30 /* Simpsons Quotes */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C4F2B2422532E25C00605C30 /* Build configuration list for PBXNativeTarget "SimpsonsQuotes" */;
+			buildConfigurationList = C4F2B2422532E25C00605C30 /* Build configuration list for PBXNativeTarget "Simpsons Quotes" */;
 			buildPhases = (
 				C4F2B22A2532E25900605C30 /* Sources */,
 				C4F2B22B2532E25900605C30 /* Frameworks */,
@@ -94,9 +94,9 @@
 			);
 			dependencies = (
 			);
-			name = SimpsonsQuotes;
+			name = "Simpsons Quotes";
 			productName = SimpsonsQuotes;
-			productReference = C4F2B22E2532E25900605C30 /* SimpsonsQuotes.app */;
+			productReference = C4F2B22E2532E25900605C30 /* Simpsons Quotes.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -106,7 +106,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1170;
-				LastUpgradeCheck = 1170;
+				LastUpgradeCheck = 1220;
 				ORGANIZATIONNAME = Yaroslav;
 				TargetAttributes = {
 					C4F2B22D2532E25900605C30 = {
@@ -114,7 +114,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C4F2B2292532E25900605C30 /* Build configuration list for PBXProject "SimpsonsQuotes" */;
+			buildConfigurationList = C4F2B2292532E25900605C30 /* Build configuration list for PBXProject "Simpsons Quotes" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -127,7 +127,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C4F2B22D2532E25900605C30 /* SimpsonsQuotes */,
+				C4F2B22D2532E25900605C30 /* Simpsons Quotes */,
 			);
 		};
 /* End PBXProject section */
@@ -208,6 +208,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -268,6 +269,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -335,7 +337,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C4F2B2292532E25900605C30 /* Build configuration list for PBXProject "SimpsonsQuotes" */ = {
+		C4F2B2292532E25900605C30 /* Build configuration list for PBXProject "Simpsons Quotes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C4F2B2402532E25C00605C30 /* Debug */,
@@ -344,7 +346,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C4F2B2422532E25C00605C30 /* Build configuration list for PBXNativeTarget "SimpsonsQuotes" */ = {
+		C4F2B2422532E25C00605C30 /* Build configuration list for PBXNativeTarget "Simpsons Quotes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C4F2B2432532E25C00605C30 /* Debug */,
